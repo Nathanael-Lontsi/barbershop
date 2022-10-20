@@ -1,0 +1,50 @@
+<!Doctype html>
+<head>
+    <title>Barber Shop Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="banner">
+    <img src="images/logo.png " class="logo">
+    <div class="banner-text">
+        <h1>Hair Studio</h1>
+        <p>Style Your Hair is Style Your Life</p>
+        <div class="banner-btn">
+            <a href="#"><span></span>Find out</a>
+            <a href="#"><span></span>Read more</a>
+        </div>
+    </div>
+</section>
+
+<div id="sidenav">
+    <nav>
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">FEATURES</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">TESTIMONIALS</a></li>
+        <li><a href="#">MEET US</a></li>
+    </ul>
+    </nav>
+</div>
+<div id="manuBtn">
+    <img src="images/menu.png" id="menu">
+</div>
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sidenav = document.getElementById("sidenav")
+var menu = document.getElementById("menu")
+
+menuBtn.onclick = fonction(){
+    if(sidenav.style.right == "-250px"){
+        sidenav.style.right = "0"
+    }
+    else{
+        sidenav.style.right = "-250px"
+    }
+}
+</script>
+
+</body>   
+</html>
